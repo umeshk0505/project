@@ -1,15 +1,18 @@
-<div data-sly-use.titleinfo="com.project.core.models.TitleInfo"></div>
+<div data-sly-use.titleinfo="com.project.core.models.TitleInfo"></div> 
 <section class="services-area section-gap">
-<div class="container">
-<div class="row d-flex justify-content-center">
-<div class="menu-content col-lg-7">
-<div class="title text-center">
-<h1>${titleinfo.title}</h1>
-<p>${titleinfo.info}
-<!--You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures.-->
-</p>
-</div>
-</div>
-</div>
-</div>
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="menu-content col-lg-7">
+            <div data-sly-test="${titleinfo.sectiongap==true}">
+				<div style="padding-top:120px"></div>
+            </div>
+				<div class="title text-center">
+					<h1>${titleinfo.title}</h1>
+					<p>${titleinfo.info}
+					<!--You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures.-->
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>

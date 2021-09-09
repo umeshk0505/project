@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Fact Area"
+    jcr:title="Testimonials"
     sling:resourceType="cq/gui/components/authoring/dialog">
     <content
         jcr:primaryType="nt:unstructured"
@@ -17,34 +17,40 @@
                         sling:resourceType="granite/ui/components/coral/foundation/well"
                         fieldLabel="Fact Details">
                         <items jcr:primaryType="nt:unstructured">
-                            <factdetailswithmap
+                            <testimonialwithmap
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                                 composite="{Boolean}true"
                                 fieldDescription="Fact Details"
-                                fieldLabel="Fact Details"
+                                fieldLabel="Fact Details with Map"
                                 required="{Boolean}false">
                                 <field
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="granite/ui/components/coral/foundation/container"
-                                    emptyText="Fact Details"
-                                    name="./factdetailswithmap">
+                                    emptyText="Testimonial Details With Map"
+                                    name="./testimonialdetailswithmap">
                                     <items jcr:primaryType="nt:unstructured">
-                                        <factnumber
+                                        <question
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                            emptyText="Quote"
+                                            fieldLabel="Quote"
+                                            name="./question"/>
+                                        <name
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                            emptyText="Fact Number"
-                                            fieldLabel="Fact Number"
-                                            name="./factnumber"/>
-                                        <factlabel
+                                            emptyText="Name"
+                                            fieldLabel="Name"
+                                            name="./name"/>
+                                        <profession
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                            emptyText="Fact Label"
-                                            fieldLabel="Fact Label"
-                                            name="./factlabel"/>
+                                            emptyText="Profession"
+                                            fieldLabel="Profession"
+                                            name="./profession"/>
                                     </items>
                                 </field>
-                            </factdetailswithmap>
+                            </testimonialwithmap>
                         </items>
                     </well>
                 </items>

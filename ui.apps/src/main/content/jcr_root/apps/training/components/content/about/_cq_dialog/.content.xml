@@ -13,22 +13,22 @@
                     <bio
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="my first text"
+                        fieldLabel="Title"
                         name="./bio"/>
                     <details
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Second Field"
+                        fieldLabel="Details"
                         name="./details"/>
                     <intro
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                        fieldLabel="Multi Line Field"
+                        fieldLabel="Description"
                         name="./intro"/>
                     <button
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="My Button"
+                        fieldLabel="Button"
                         name="./button"
                         text="VIEW FULL DETAILS"/>
                     <image

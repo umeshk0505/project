@@ -1,0 +1,21 @@
+<div data-sly-use.price="com.project.core.models.Pricing"></div>
+<section class="price-area section-gap">
+    <div class="container">
+         <div class="row">
+               <div class="col-lg-3 col-md-6 single-price">
+                    <div class="top-part">
+                        <h1 class="package-no">${price.number}</h1>
+                        <h4>${price.type}</h4>
+                        <p class="mt-10">${price.for}</p>
+                    </div>
+               <div class="package-list">
+               <ul>
+                  <li>${price.prop1}</li>
+    	          <li>${price.prop2}</li>
+                  <li>${price.prop3}</li>
+               </ul>
+            </div>                           
+          </div>
+       </div>
+   </div>
+ </section>

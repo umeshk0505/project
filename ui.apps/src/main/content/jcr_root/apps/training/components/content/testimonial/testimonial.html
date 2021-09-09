@@ -1,0 +1,19 @@
+<div data-sly-use.testimonial="com.project.core.models.Testimonial"></div>
+
+ <section class="testimonial-area section-gap">
+<div class="container">
+<div class="row">
+<div class="active-testimonial" data-sly-list.test="${testimonial.testimonialDetailsWithMap}" >
+<div class="single-testimonial item d-flex flex-row">
+<div class="desc">
+<p>
+${test.question}
+</p>
+<h4>${test.name}</h4>
+<p>${test.profession}</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
